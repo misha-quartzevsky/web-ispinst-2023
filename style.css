@@ -1,0 +1,44 @@
+.header{
+    position: absolute;
+    padding-top: 10px;
+    font-family: 'Unbounded';
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 150px;
+}
+
+.navig{
+    position: relative;
+    padding-top: 10px;
+    padding-right: 250px;
+    text-align: right; 
+}
+
+.navig__content{
+    font-family: 'Golos Text', sans-serif;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.caption{
+    position: relative;
+    text-align: center;
+    padding: 60px;
+}
+
+.caption__header{
+    font-family: 'Unbounded';
+    font-weight: 800;
+}
+
+.caption__slogan{
+    font-family: 'Unbounded', cursive;
+    font-weight: 400;
+}
+
+.caption__button{
+    height: 40px;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
