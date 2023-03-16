@@ -1,5 +1,6 @@
 body{
-    font-family:  'Golos Text', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Oxygen', sans-serif;
     background-color: #D8D4F2;
     color: #13070C;
     text-align: center;
@@ -16,23 +17,26 @@ a:hover{
 
 .header{
     position: absolute;
-    padding-top: 10px;
-    font-family: 'Unbounded';
+    color: #FFFFFF;
+    padding-top: 20x;
+    font-family: 'Lora';
     font-weight: 600;
-    font-size: 18px;
-    padding-left: 150px;
+    font-size: 26px;
+    padding-left: 250px;
 }
 
 .navig{
     position: relative;
-    padding-top: 10px;
-    padding-right: 250px;
-    text-align: right; 
+    padding-top: 27px;
+    padding-right: 270px;
+    text-align: right;
+    font-size: 12px; 
+    text-transform: uppercase;
 }
 
 .navig__content{
-    font-family: 'Golos Text', sans-serif;
-    color: black;
+    font-family: 'Oxygen', sans-serif;
+    color: #FFFFFF;
     padding: 20px;
     text-decoration: none;
 }
@@ -44,33 +48,70 @@ a:hover{
 }
 
 .caption__header{
-    font-family: 'Unbounded';
+    font-family: 'Lora';
     font-weight: 800;
+    font-size: 50px;
 }
 
 .caption__slogan{
-    font-family: 'Unbounded', cursive;
+    font-family: 'Oxygen';
     font-weight: 400;
 }
 
 .caption__button{
-    height: 40px;
+    height: 44px;
     box-sizing: border-box;
-    font-family: 'Golos Text', sans-serif;
+    width: 167px;
+    height: 44px;
+    font-family: 'Oxygen';
+    color: #FFFFFF;
+    border-radius: 3px;
+    background-color:  #DD783F; ;
 }
 
 .extraNav__content{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 52px;
+    padding-right: 52px;
+    font-family: 'Lora';
+    text-decoration: none;
 }
 h2{
-    font-size: 24px;
+    font-size: 27px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+}
+
+.featured_heading{
+    border-bottom: #DD783F;
+    border-width: 188px;
 }
 
 .post{
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 50px;
+    padding-left: 53px;
     padding-right: 50px;
+}
+
+.post__custdevvictims{
+    background-image: url("images/interview.png");
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+}
+
+.post__instituteisp{
+    background-image: url("images/institute.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+}
+
+.actualText{
+    text-align: left;
+    width: 1000px;
+}
+
+.pubInfo{
+    text-align: left    ;
 }
