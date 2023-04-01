@@ -9,129 +9,152 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="navig">
-                <span class="navig__logo">
-                    Escape.
-                </span>
-                <span class="navig__menu-global">
-                    <a class="navig__menu" href="#">HOME</a>
-                    <a class="navig__menu" href="#">CATEGORIES</a>
-                    <a class="navig__menu" href="#">ABOUT</a>
-                    <a class="navig__menu" href="#">CONTACT</a>
-                </span>
-            </div>
-            <h1>Let's do it together.</h1>
-            <p class="substring">We travel the world in search of stories. Come along for the ride.</p>
-            <button class="call-to-action">View Latest Posts</button>
-        </header>
-        <main>
-            <nav class="low-menu">
-                <div class="low-menu__bg"></div>
-                <a class="low-menu__link" href="#">Nature</a>
-                <a class="low-menu__link" href="#">Photography</a>
-                <a class="low-menu__link" href="#">Relaxation</a>
-                <a class="low-menu__link" href="#">Vacation</a>
-                <a class="low-menu__link" href="#">Travel</a>
-                <a class="low-menu__link" href="#">Adventure</a>
+        <header class="header">
+            <span class="header__logo">
+                Escape.
+            </span>
+            <nav class="header-menu-global">
+                <a class="header-menu" href="#">HOME</a>
+                <a class="header-menu" href="#">CATEGORIES</a>
+                <a class="header-menu" href="#">ABOUT</a>
+                <a class="header-menu" href="#">CONTACT</a>
             </nav>
-            <section class="sec">
-                <h2>Featured Posts</h2>
-                <div class="line"></div>
-                <div class="featured featured__1">
-                    <h3 class="featured__header">The Road Ahead</h3>
-                    <p class="featured__substring">The road ahead might be paved - it might not be.</p>
-                    <div>
-                        <img src="images/mat-vogels.png" alt="Mat Vogels">
-                        <span class="featured__author">Mat Vogels</span>
-                        <span class="featured__date">September 25, 2015</span>
-                    </div>
+        </header>
+
+        <section class="first-view">
+            <h1 class="slogan">Let's do it together.</h1>
+            <p class="substring">We travel the world in search of stories. Come along for the ride.</p>
+            <div class="cta">
+                <button class="cta__text">View Latest Posts</button>
+            </div>      
+        </section>
+        <main>
+            <div class="low">
+                <nav class="low-menu">
+                    <a class="low-menu__link" href="#">Nature</a>
+                    <a class="low-menu__link" href="#">Photography</a>
+                    <a class="low-menu__link" href="#">Relaxation</a>
+                    <a class="low-menu__link" href="#">Vacation</a>
+                    <a class="low-menu__link" href="#">Travel</a>
+                    <a class="low-menu__link" href="#">Adventure</a>
+                </nav>
+            </div>
+            <section class="featured-posts">
+                <h2 class="name-of-section">Featured Posts</h2>
+                <div class="posts">
+                    <article class="featured featured__1">
+                        <div class="info">
+                            <span class="featured__header">The Road Ahead</span>
+                            <p class="featured__substring">The road ahead might be paved - it might not be.</p>
+                            <div class="featured__extra-info">
+                                <img class="featured__img-author" src="images/mat-vogels.png" alt="Mat Vogels">
+                                <span class="featured__author">Mat Vogels</span>
+                                <span class="featured__date">September 25, 2015</span>
+                            </div> 
+                        </div> 
+                    </article>
+
+                    <article class="featured featured__2">
+                        <button class="post-tag">ADVENTURE</button>
+                        <div class="info">
+                            <span class="featured__header">From Top Down</span>
+                            <p class="featured__substring">Once a year, go someplace you’ve never been before.</p>
+                            <div class="featured__extra-info">
+                                <img class="featured__img-author" src="images/william-wong.png" alt="William Wong">
+                                <span class="featured__author">William Wong</span>
+                                <span class="featured__date">September 25, 2015</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="featured featured__2">
-                    <button class="post-tag">ADVENTURE</button>
-                    <h3 class="featured__header">From Top Down</h3>
-                    <p class="featured__substring">Once a year, go someplace you’ve never been before.</p>
-                    <div>
-                        <img src="images/william-wong.png" alt="William Wong">
-                        <span class="featured__author">William Wong</span>
-                        <span class="featured__date">September 25, 2015</span>
-                    </div>
-                </div>
+                
             </section>
-            <section class="sec">
-                <h2>Most Recent</h2>
-                <div class="line"></div>
-                <div class="recent">
-                    <img src="images/img1.png" alt="Still Standing Tall">
-                    <div class="rline rline__up"></div>
-                    <h3 class="recent__header">Still Standing Tall</h3>
-                    <p class="recent__substring">Life begins at the end of your comfort zone.</p>
-                    <div class="rline rline__down"></div>
-                    <div class="recent__underground">
-                        <img src="images/william-wong.png" alt="William Wong">
-                        <span class="recent__author">William Wong</span>
-                        <span class="recent__date">9/25/2015</span>
+            <section class="most-recent">
+                <h2 class="name-of-section">Most Recent</h2>
+                <div class="recents">                  
+                    <div class="recent">
+                        <img src="images/img1.png" alt="Still Standing Tall">
+                        <div class="recent__caption"> 
+                            <h3 class="recent__header">Still Standing Tall</h3>
+                            <p class="recent__substring">Life begins at the end of your comfort zone.</p>
+                        </div>
+                        
+                        <div class="recent__underground">
+                            <img src="images/william-wong.png" alt="William Wong">
+                            <span class="recent__author">William Wong</span>
+                            <span class="recent__date">9/25/2015</span>
+                        </div>
+                    </div>                   
+
+                    <div class="recent">
+                        <img src="images/img2.png" alt="Sunny Side Up">
+                        <div class="recent__caption">
+                            <h3 class="recent__header">Sunny Side Up</h3>
+                            <p class="recent__substring">No place is ever as bad as they tell you it’s going to be.</p>
+                        </div>
+                        <div class="recent__underground">
+                            <img src="images/mat-vogels.png" alt="Mat Vogels">
+                            <span class="recent__author">Mat Vogels</span>
+                            <span class="recent__date">9/25/2015</span>
+                        </div>
                     </div>
-                </div>
-                <div class="recent">
-                    <img src="images/img2.png" alt="Sunny Side Up">
-                    <div class="rline rline__up"></div>
-                    <h3 class="recent__header">Sunny Side Up</h3>
-                    <p class="recent__substring">No place is ever as bad as they tell you it’s going to be.</p>
-                    <div class="rline rline__down"></div>
-                    <div class="recent__underground">
-                        <img src="images/mat-vogels.png" alt="Mat Vogels">
-                        <span class="recent__author">Mat Vogels</span>
-                        <span class="recent__date">9/25/2015</span>
+             
+                    <div class="recent">
+                        <img src="images/img3.png" alt="Water Falls">
+                        <div class="recent__caption">
+                            <h3 class="recent__header">Water Falls</h3>
+                            <p class="recent__substring">We travel not to escape life, but for life not to escape us.</p>
+                        </div>
+                        
+                        <div class="recent__underground">
+                            <img src="images/mat-vogels.png" alt="Mat Vogels">
+                            <span class="recent__author">Mat Vogels</span>
+                            <span class="recent__date">9/25/2015</span>
+                        </div>
                     </div>
-                </div>
-                <div class="recent">
-                    <img src="images/img3.png" alt="Water Falls">
-                    <div class="rline rline__up"></div>
-                    <h3 class="recent__header">Water Falls</h3>
-                    <p class="recent__substring">We travel not to escape life, but for life not to escape us.</p>
-                    <div class="rline rline__down"></div>
-                    <div class="recent__underground">
-                        <img src="images/mat-vogels.png" alt="Mat Vogels">
-                        <span class="recent__author">Mat Vogels</span>
-                        <span class="recent__date">9/25/2015</span>
+
+                    <div class="recent">
+                        <img src="images/img4.png" alt="Through the Mist">
+                        <div class="recent__caption">
+                            <h3 class="recent__header">Through the Mist</h3>
+                            <p class="recent__substring">Travel makes you see what a tiny place you occupy in the world.</p>
+                        </div>
+                        
+                        <div class="recent__underground">
+                            <img src="images/william-wong.png" alt="William Wong">
+                            <span class="recent__author">William Wong</span>
+                            <span class="recent__date">9/25/2015</span>
+                        </div>
                     </div>
-                </div>
-                <div class="recent">
-                    <img src="images/img4.png" alt="Through the Mist">
-                    <div class="rline rline__up"></div>
-                    <h3 class="recent__header">Through the Mist</h3>
-                    <p class="recent__substring">Travel makes you see what a tiny place you occupy in the world.</p>
-                    <div class="rline rline__down"></div>
-                    <div class="recent__underground">
-                        <img src="images/william-wong.png" alt="William Wong">
-                        <span class="recent__author">William Wong</span>
-                        <span class="recent__date">9/25/2015</span>
+                
+                    
+                    <div class="recent">
+                        <img src="images/img5.png" alt="Awaken Early">
+                        <div class="recent__caption"> 
+                            <h3 class="recent__header">Awaken Early</h3>
+                            <p class="recent__substring">Not all those who wander are lost.</p>
+                        </div>
+                        <div class="recent__underground">
+                            <img src="images/mat-vogels.png" alt="Mat Vogels">
+                            <span class="recent__author">Mat Vogels</span>
+                            <span class="recent__date">9/25/2015</span>
+                        </div>
                     </div>
-                </div>
-                <div class="recent">
-                    <img src="images/img5.png" alt="Awaken Early">
-                    <div class="rline rline__up"></div>
-                    <h3 class="recent__header">Awaken Early</h3>
-                    <p class="recent__substring">Not all those who wander are lost.</p>
-                    <div class="rline rline__down"></div>
-                    <div class="recent__underground">
-                        <img src="images/mat-vogels.png" alt="Mat Vogels">
-                        <span class="recent__author">Mat Vogels</span>
-                        <span class="recent__date">9/25/2015</span>
+                   
+                    <div class="recent">
+                        <img src="images/img6.png" alt="Try it Always">
+                        <div class="recent__caption"> 
+                            <h3 class="recent__header">Try it Always</h3>
+                            <p class="recent__substring">The world is a book, and those who do not travel read only one page.</p>
+                        </div>
+                        
+                        <div class="recent__underground">
+                            <img src="images/mat-vogels.png" alt="Mat Vogels">
+                            <span class="recent__author">Mat Vogels</span>
+                            <span class="recent__date">9/25/2015</span>
+                        </div>
                     </div>
-                </div>
-                <div class="recent">
-                    <img src="images/img6.png" alt="Try it Always">
-                    <div class="rline rline__up"></div>
-                    <h3 class="recent__header">Try it Always</h3>
-                    <p class="recent__substring">The world is a book, and those who do not travel read only one page.</p>
-                    <div class="rline rline__down"></div>
-                    <div class="recent__underground">
-                        <img src="images/mat-vogels.png" alt="Mat Vogels">
-                        <span class="recent__author">Mat Vogels</span>
-                        <span class="recent__date">9/25/2015</span>
-                    </div>
+                    
                 </div>
             </section>
         </main>
@@ -144,5 +167,25 @@
             <a class="foot__menu" href="#">ABOUT</a>
             <a class="foot__menu" href="#">CONTACT</a>
         </footer>
+
+        <div class="basement">
+            <div class="basement-contact">
+                <h3 class="basement-title">Stay in Touch</h3>
+                <form class="basement-form"> 
+                    <input class="basement-form__field" placeholder="Enter your email address">
+                    <input type="submit" value="Submit" class="basement-form__button">
+                </form>
+            </div>
+            <footer class="footer">
+                <span class="footer__logo">Escape.</span>
+                <section class="footer__menu">
+                    <a title="Home Page" href="#" class="footer__menu__link">HOME</a>
+                    <a title="Categories of posts" href="#" class="footer__menu__link">CATEGORIES</a>
+                    <a title="About us" href="#" class="footer__menu__link">ABOUT</a>
+                    <a title="Our contact" href="#" class="footer__menu__link">CONTACT</a>
+                </section>
+            </footer>
+        </div>
+
     </body>
 </html>
