@@ -40,6 +40,10 @@ body{
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+<<<<<<< HEAD
+=======
+    te
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
 }
 
 .header-menu__link{
@@ -141,8 +145,13 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+<<<<<<< HEAD
     padding-left: 252px;
     padding-right: 252px;
+=======
+    margin-right: 25%;
+    margin-left: 25%;
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
     margin-top: 40px;
 }
 
@@ -159,7 +168,10 @@ body{
     font-size: 27px;
     color: #FFFFFF;
     margin: 0px;
+<<<<<<< HEAD
     margin-top: 157px;
+=======
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
 }
 
 .featured__substring{
@@ -175,7 +187,10 @@ body{
     align-items: center;
     width: 420px;
     height: 25px;
+<<<<<<< HEAD
     margin-bottom: 15px;
+=======
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
 }
 
 .most-recent{
@@ -255,7 +270,11 @@ body{
     gap: 25px;
     margin-right: 25%;
     margin-left: 25%;
+<<<<<<< HEAD
     flex: 296px;
+=======
+    margin-top: 40px;
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
 }
 
 .recent{
@@ -270,6 +289,13 @@ body{
 
     padding-right: 13px;
     margin-left: 13px;
+}
+
+.recent__caption{
+    height: 66px;
+    padding-right: 13px;
+    padding-top: 13px;
+    padding: 13px;
 }
 
 .recent__header{
@@ -290,6 +316,7 @@ body{
 }
 
 .recent__underground{
+<<<<<<< HEAD
     position: relative;
     display: flex;
     align-items: center;
@@ -298,6 +325,15 @@ body{
     border-radius: 0px;
     height: 48px;
     margin-top: 40px;
+=======
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #FCFCFC;
+    border-radius: 0px;
+    height: 48px;
+    margin-top: 2px;
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
     padding-left: 13px;
     padding-right: 13px;
 }
@@ -437,3 +473,29 @@ body{
     font-size: 26px;
 }
 
+<<<<<<< HEAD
+=======
+.blog-header{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.header-menu-global{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+.header-menu{
+    text-decoration: none;
+    color: #2E2E2E;
+}
+>>>>>>> 79daeca480da4a26bb9dc88b8ae006295aebbe25
