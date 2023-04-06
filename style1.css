@@ -40,6 +40,7 @@ body{
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+    te
 }
 
 .header-menu__link{
@@ -141,8 +142,8 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    padding-left: 252px;
-    padding-right: 252px;
+    margin-right: 25%;
+    margin-left: 25%;
     margin-top: 40px;
 }
 
@@ -150,7 +151,6 @@ body{
     width: 460px;
     height: 280px;
     border-radius: 3px;
-    flex-basis: 280px;
 }
 
 .featured__header{
@@ -159,7 +159,6 @@ body{
     font-size: 27px;
     color: #FFFFFF;
     margin: 0px;
-    margin-top: 157px;
 }
 
 .featured__substring{
@@ -175,7 +174,6 @@ body{
     align-items: center;
     width: 420px;
     height: 25px;
-    margin-bottom: 15px;
 }
 
 .most-recent{
@@ -255,7 +253,7 @@ body{
     gap: 25px;
     margin-right: 25%;
     margin-left: 25%;
-    flex: 296px;
+    margin-top: 40px;
 }
 
 .recent{
@@ -263,13 +261,13 @@ body{
     width: 296px;
     border-radius: 3px;
     background-color: #FFFFFF;
-    margin-top: 25px;
 }
 
 .recent__caption{
-
+    height: 66px;
     padding-right: 13px;
-    margin-left: 13px;
+    padding-top: 13px;
+    padding: 13px;
 }
 
 .recent__header{
@@ -277,8 +275,6 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: #101315;
-    margin-bottom: 6px;
-    margin-top: 13px;
 }
 
 .recent__substring{
@@ -286,18 +282,16 @@ body{
     font-weight: 400;
     font-size: 13px; 
     color: #7A7A7A;
-    margin: 0px
 }
 
 .recent__underground{
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     background: #FCFCFC;
     border-radius: 0px;
     height: 48px;
-    margin-top: 40px;
+    margin-top: 2px;
     padding-left: 13px;
     padding-right: 13px;
 }
@@ -437,3 +431,26 @@ body{
     font-size: 26px;
 }
 
+.blog-header{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.header-menu-global{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+.header-menu{
+    text-decoration: none;
+    color: #2E2E2E;
+}
