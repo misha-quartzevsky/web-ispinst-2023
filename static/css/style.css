@@ -11,7 +11,7 @@ body{
     justify-content: space-around;
     flex-direction: column;
     width: 100%;
-    background: url(static/img/headerImage.svg); 
+    background: url(../img/headerImage.svg); 
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -196,7 +196,7 @@ body{
 }
 
 .featured__1{
-    background-image: url(static/img/feat1.png);
+    background-image: url(../img/feat1.png);
     background-repeat: no-repeat;
     padding-left: 20px;
     padding-right: 20px;
@@ -204,7 +204,7 @@ body{
 }
 
 .featured__2{
-    background-image: url(static/img/feat2.png);
+    background-image: url(../img/feat2.png);
     background-repeat: no-repeat;
     padding-right: 20px;
     padding-left: 20px;
@@ -343,7 +343,7 @@ body{
 
 .basement{
     position: relative;
-    background: url(static/img/basement-bg.png); 
+    background: url(../img/basement-bg.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

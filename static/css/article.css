@@ -94,6 +94,7 @@ body{
     align-items: center;
     padding: 0 250px 135px;
     margin-top: 140px;
+    white-space: pre-line;
 }
 
 .foot__logo{
@@ -114,7 +115,7 @@ body{
 
 .basement{
     position: relative;
-    background: url(static/img/basement-bg); 
+    background: url(../img/basement-bg.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
