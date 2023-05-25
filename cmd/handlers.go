@@ -101,7 +101,7 @@ func mostRecentPosts() []mostRecentPostData {
 		{
 			Title:       "Still Standing Tall",
 			Subtitle:    "Life begins at the end of your comfort zone.",
-			Image:       "images/img1.png",
+			Image:       "/static/img/img1.png",
 			Author:      "William Wong",
 			AuthorImg:   "/static/img/william-wong.png",
 			PublishDate: "9/25/2015",
@@ -109,7 +109,7 @@ func mostRecentPosts() []mostRecentPostData {
 		{
 			Title:       "Sunny Side Up",
 			Subtitle:    "No place is ever as bad as they tell you it's going to be.",
-			Image:       "images/img2.png",
+			Image:       "/static/img/img2.png",
 			Author:      "Mat Vogels",
 			AuthorImg:   "/static/img/mat-vogels.png",
 			PublishDate: "9/25/2015",
@@ -117,7 +117,7 @@ func mostRecentPosts() []mostRecentPostData {
 		{
 			Title:       "Water Falls",
 			Subtitle:    "We travel not to escape life, but for life not to escape us.",
-			Image:       "images/img3.png",
+			Image:       "/static/img/img3.png",
 			Author:      "Mat Vogels",
 			AuthorImg:   "/static/img/mat-vogels.png",
 			PublishDate: "9/25/2015",
@@ -125,7 +125,7 @@ func mostRecentPosts() []mostRecentPostData {
 		{
 			Title:       "Through the Mist",
 			Subtitle:    "Travel makes you see what a tiny place you occupy in the world.",
-			Image:       "images/img4.png",
+			Image:       "/static/img/img4.png",
 			Author:      "William Wong",
 			AuthorImg:   "/static/img/william-wong.png",
 			PublishDate: "9/25/2015",
@@ -133,7 +133,7 @@ func mostRecentPosts() []mostRecentPostData {
 		{
 			Title:       "Awaken Early",
 			Subtitle:    "Not all those who wander are lost.",
-			Image:       "images/img5.png",
+			Image:       "/static/img/img5.png",
 			Author:      "Mat Vogels",
 			AuthorImg:   "/static/img/mat-vogels.png",
 			PublishDate: "9/25/2015",
@@ -141,7 +141,7 @@ func mostRecentPosts() []mostRecentPostData {
 		{
 			Title:       "Try it Always",
 			Subtitle:    "The world is a book, and those who do not travel read only one page.",
-			Image:       "images/img6.png",
+			Image:       "/static/img/img6.png",
 			Author:      "Mat Vogels",
 			AuthorImg:   "/static/img/mat-vogels.png",
 			PublishDate: "9/25/2015",
