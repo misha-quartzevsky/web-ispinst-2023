@@ -31,7 +31,7 @@
             </div>
 
         </header>
-        <main>
+        <main class="main">
             <div class="low">
                 <nav class="low-menu">
                     <a class="low-menu__link" href="#">Nature</a>
@@ -43,10 +43,12 @@
                 </nav>
             </div>
             <section class="featured-posts">
+                
                 <h2 class="name-of-section">Featured Posts</h2>
                 {{ range .FeaturedPosts}}
-                <div class="posts">
-                    <article class="featured featured__1">                     
+                <div class="posts {{.ImgModifier}}">
+                   
+                    <article class="featured">                     
                         <h3 class="featured__header">{{ .Title }}</h3>
                         <p class="featured__substring">{{ .Subtitle }}</p>
                         <div class="featured__extra-info">
@@ -55,6 +57,7 @@
                             <span class="featured__date">{{ .PublishDate }}</span>
                         </div>                      
                     </article>
+               
                 </div>
                 {{ end }}
             </section>

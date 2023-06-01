@@ -96,6 +96,12 @@ body{
     margin-top: 31px;
 }
 
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+}
+
 .low-menu{
     display: flex;
     height: 65px;
@@ -119,9 +125,11 @@ body{
 
 .featured-posts{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
+    justify-content: center;
     margin-top: 60px;
 }
 
@@ -130,10 +138,12 @@ body{
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
+    width: 100%;
     text-decoration-line: underline;
     text-decoration-color:  #DEDEDE;
-    text-underline-offset: 16px;
+   /* text-underline-offset: 16px;*/
     position: relative;
+    text-align: center;
 }
 
 .posts{
@@ -144,6 +154,12 @@ body{
     padding-left: 252px;
     padding-right: 252px;
     margin-top: 40px;
+}
+
+.all-posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .featured{
@@ -198,17 +214,15 @@ body{
 .featured__1{
     background-image: url(../img/feat1.png);
     background-repeat: no-repeat;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 20px;
-    margin: 0%;
 }
 
 .featured__2{
     background-image: url(../img/feat2.png);
     background-repeat: no-repeat;
     padding-right: 20px;
-    padding-left: 20px;
-    margin: 0%;
+    padding-left: 0px;
 }
 
 .featured__img-author{
