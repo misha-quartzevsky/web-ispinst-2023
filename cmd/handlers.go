@@ -75,79 +75,48 @@ func post(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func featuredPosts() []featuredPostData {
-	return []featuredPostData{
-		{
-			Title:       "The Road Ahead",
-			Subtitle:    "The road ahead might be paved — it might not be.",
-			ImgModifier: "featured__1",
-			Author:      "Mat Vogels",
-			AuthorImg:   "/static/img/mat-vogels.png",
-			PublishDate: "September 25, 2015",
-		},
-		{
-			Title:       "From Top Down",
-			Subtitle:    "Once a year, go someplace you’ve never been before.",
-			ImgModifier: "featured__2",
-			Author:      "William Wong",
-			AuthorImg:   "/static/img/william-wong.png",
-			PublishDate: "September 25, 2015",
-		},
+func featuredPosts(db *sqlx.DB) ([]featuredPostData, error) {
+	const query = `
+		SELECT
+			title,
+			subtitle,
+			publishdate
+		FROM
+			post
+		WHERE featured = 1
+	` // Составляем SQL-запрос для получения записей для секции featured-posts
+
+	var posts []featuredPostData // Заранее объявляем массив с результирующей информацией
+
+	err := db.Select(&posts, query) // Делаем запрос в базу данных
+	if err != nil {                 // Проверяем, что запрос в базу данных не завершился с ошибкой
+		return nil, err
 	}
+
+	return posts, nil
 }
 
-func mostRecentPosts() []mostRecentPostData {
-	return []mostRecentPostData{
-		{
-			Title:       "Still Standing Tall",
-			Subtitle:    "Life begins at the end of your comfort zone.",
-			Image:       "/static/img/img1.png",
-			Author:      "William Wong",
-			AuthorImg:   "/static/img/william-wong.png",
-			PublishDate: "9/25/2015",
-		},
-		{
-			Title:       "Sunny Side Up",
-			Subtitle:    "No place is ever as bad as they tell you it's going to be.",
-			Image:       "/static/img/img2.png",
-			Author:      "Mat Vogels",
-			AuthorImg:   "/static/img/mat-vogels.png",
-			PublishDate: "9/25/2015",
-		},
-		{
-			Title:       "Water Falls",
-			Subtitle:    "We travel not to escape life, but for life not to escape us.",
-			Image:       "/static/img/img3.png",
-			Author:      "Mat Vogels",
-			AuthorImg:   "/static/img/mat-vogels.png",
-			PublishDate: "9/25/2015",
-		},
-		{
-			Title:       "Through the Mist",
-			Subtitle:    "Travel makes you see what a tiny place you occupy in the world.",
-			Image:       "/static/img/img4.png",
-			Author:      "William Wong",
-			AuthorImg:   "/static/img/william-wong.png",
-			PublishDate: "9/25/2015",
-		},
-		{
-			Title:       "Awaken Early",
-			Subtitle:    "Not all those who wander are lost.",
-			Image:       "/static/img/img5.png",
-			Author:      "Mat Vogels",
-			AuthorImg:   "/static/img/mat-vogels.png",
-			PublishDate: "9/25/2015",
-		},
-		{
-			Title:       "Try it Always",
-			Subtitle:    "The world is a book, and those who do not travel read only one page.",
-			Image:       "/static/img/img6.png",
-			Author:      "Mat Vogels",
-			AuthorImg:   "/static/img/mat-vogels.png",
-			PublishDate: "9/25/2015",
-		},
+func mostRecentPosts(db *sqlx.DB) ([]mostRecentPostData, error) {
+	const query = `
+		SELECT
+			title,
+			subtitle,
+			publishdate
+		FROM
+			post
+		WHERE featured = 1
+	` // Составляем SQL-запрос для получения записей для секции recent-posts
+
+	var posts []featuredPostData // Заранее объявляем массив с результирующей информацией
+
+	err := db.Select(&posts, query) // Делаем запрос в базу данных
+	if err != nil {                 // Проверяем, что запрос в базу данных не завершился с ошибкой
+		return nil, err
 	}
+
+	return posts, nil
 }
+
 
 func postInfo() postContentData {
 	return postContentData{
