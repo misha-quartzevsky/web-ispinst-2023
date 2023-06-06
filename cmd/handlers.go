@@ -7,10 +7,17 @@ import (
 )
 
 type indexPage struct {
-	FeaturedPosts   []featuredPostData
-	MostRecentPosts []mostRecentPostData
+	Posts []postsData
 }
-
+type postsData{
+	Title       string `db:"title"`
+	Subtitle    string `db:"subtitle"`
+	ImgModifier string `db:"imgmodifier"`
+	Author      string `db:"author"`
+	AuthorImg   string `db:"authorimg"`
+	PublishDate string `db:"publishdate"`
+	Featured bool `db:"featured"`
+}
 type featuredPostData struct {
 	Title       string `db:"title"`
 	Subtitle    string `db:"subtitle"`
@@ -75,6 +82,27 @@ func post(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func posts(db *sqlx.DB) ([]postsData, error) {
+	const query = `
+		SELECT
+			title,
+			subtitle,
+			publishdate
+		FROM
+			post
+		WHERE featured = 1
+	` // Составляем SQL-запрос для получения записей для секции featured-posts
+
+	var posts []featuredPostData // Заранее объявляем массив с результирующей информацией
+
+	err := db.Select(&posts, query) // Делаем запрос в базу данных
+	if err != nil {                 // Проверяем, что запрос в базу данных не завершился с ошибкой
+		return nil, err
+	}
+
+	return posts, nil 
+}
+
 func featuredPosts(db *sqlx.DB) ([]featuredPostData, error) {
 	const query = `
 		SELECT
@@ -104,7 +132,7 @@ func mostRecentPosts(db *sqlx.DB) ([]mostRecentPostData, error) {
 			publishdate
 		FROM
 			post
-		WHERE featured = 1
+		WHERE featured = 0
 	` // Составляем SQL-запрос для получения записей для секции recent-posts
 
 	var posts []featuredPostData // Заранее объявляем массив с результирующей информацией
@@ -117,6 +145,7 @@ func mostRecentPosts(db *sqlx.DB) ([]mostRecentPostData, error) {
 	return posts, nil
 }
 
+func 
 
 func postInfo() postContentData {
 	return postContentData{
