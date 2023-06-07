@@ -1,4 +1,4 @@
-const authorAvatarInput = document.getElementById("forms__upload-user-image");
+const authorAvatarInput = document.getElementById("upload-user-image__file");
 const authorAvatarPreview = document.querySelector(".upload-user-image__user-image");
 const authorAvatarPreviewPost = document.querySelector(".card-area__user-image");
 const authorAvatarInscription = document.querySelector(".upload-user-image__caption");
