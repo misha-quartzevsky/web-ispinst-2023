@@ -37,6 +37,7 @@ func index(db *sqlx.DB) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
 		posts, err := posts(db)
 		if err != nil {
+			log.Println("str40")
 			http.Error(w, "Internal Server Error", 500)
 			log.Println(err)
 			return
@@ -44,6 +45,7 @@ func index(db *sqlx.DB) func(w http.ResponseWriter, r *http.Request) {
 
 		ts, err := template.ParseFiles("pages/index.html")
 		if err != nil {
+			log.Println("str48")
 			http.Error(w, "Internal Server Error", 500)
 			log.Println(err.Error())
 			return
@@ -55,6 +57,7 @@ func index(db *sqlx.DB) func(w http.ResponseWriter, r *http.Request) {
 
 		err = ts.Execute(w, data)
 		if err != nil {
+			log.Println("str60")
 			http.Error(w, "Internal Server Error", 500)
 			log.Println(err.Error())
 			return
