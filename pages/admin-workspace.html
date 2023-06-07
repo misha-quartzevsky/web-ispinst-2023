@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/style-admin-workspace.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Train+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="../static/js/admin.js" defer></script>
+    <title>Admin Workspace</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <h1 class="header-logo__name">Escape.</h1>
+            <h2 class="header-logo__extra-name">author</h2>
+        </div>
+        <nav class="header-menu"> 
+            <img src="../static/img/user-image.png" alt="Escape.author" class="header-menu__user-image">
+            <img src="../static/img/log-out.png" alt="Escape.author" class="header-menu__logout"> 
+        </nav>  
+    </div>
+    <div class="create-new-post">
+        <div class="create-new-post-header">
+            <h2 class="create-new-post-header__title">New Post</h2>
+            <h2 class="create-new-post-header__subtitle">Fill out the form bellow and publish your article</h2>
+        </div>
+        <div class="create-new-post__publish">Publish</div>
+    </div>
+    <div class="main-info">
+        <h3 class="main-info__title">Main Information</h3>   
+        <div class="main-info__whole-field">
+            <div class="working-field__forms">
+              <div class="forms__form-element">
+                <span class="forms__title">Title</span>
+                <input type="text" name="title" value="New Post" class="forms__text forms__text-input_filled" />
+              </div>
+              <div class="forms__form-element">
+                <span class="forms__title">Short description</span>
+                <input type="text" name="subtitle" value="Please, enter any description" class="forms__text forms__text_filled"/>
+              </div>
+              <div class="forms__form-element">
+                <span class="forms__title">Author name</span>
+                <input type="text" name="author_name" class="forms__text"/>
+              </div>
+              <div class="forms__form-element">
+                <span class="forms__title">Author Photo</span>
+                <div class="forms__upload-user-image" >
+                  <input type="file" name="image" id="forms__upload-user-image" style="display:none">  
+                  <label for="upload-user-image__file" class="upload-user-image__user-image">
+                    <image src="../static/img/camera.png" />
+                  </label>
+                  <label for="upload-user-image__file" class="upload-user-image__caption">Upload</label> 
+                  <div class="forms__uploaded-img-buttons hidden">
+                    <label for="upload-user-image__file" class="uploaded-img-buttons__upload-new">
+                        <img src="../static/img/camera.png" class="upload-new__img" />
+                        <span class="upload-new__caption">Upload New</span>
+                    </label>
+                    <div class="uploaded-img-buttons__remove">
+                      <img src="../static/img/trash.png" class="remove__img" />
+                      <span class="remove__caption">Remove</span>
+                    </div>
+                  </div>
+                  <input type="file" name="user-image" accept="image/*" class="hidden" id="upload-user-image__file" />
+                </div>
+              </div>
+              <div class="forms__form-element">
+                <span class="forms__title">Publish Date</span>
+                <input type="date" name="publish_date" class="forms__text content__text-area"/>
+              </div>
+              <div class="forms__form-element">
+                <span class="forms__title">Article image</span>
+                <div class="forms__upload-post-image">
+                  <label for="upload-page-img__file-field" class="upload-post-img__button">
+                    <image src="../static/img/camera.png" />
+                    <span class="upload-post-img__caption">Upload</span>
+                  </label>
+                  <input type="file" name="page_image" accept="image/*" class="hidden" id="upload-page-img__file-field" />
+                </div>
+                <div class="forms__uploaded-img-buttons hidden">
+                  <label for="upload-page-img__file-field" class="uploaded-img-buttons__upload-new">
+                    <img src="../static/img/camera.png" class="upload-new__img" />
+                    <span class="upload-new__caption">Upload New</span>
+                  </label>
+                  <div class="uploaded-img-buttons__remove">
+                    <img src="../static/img/trash.png" class="remove__img" />
+                    <span class="remove__caption">Remove</span>
+                  </div>
+                </div>
+                <span class="forms__subtitle" id="forms__page-caption">Size up to 10mb. Format: png, jpeg, gif.</span>
+              </div>
+              <div class="forms__form-element">
+                <span class="forms__title">Preview image</span>
+                <div class="forms__upload-post-img">
+                  <label for="upload-card-img__file-field" class="upload-post-img__button upload-post-img__button_card">
+                    <input type="file" name="image" id="upload-post-img__button" style="display:none"> 
+                    <image src="../static/img/camera.png" />
+                    <span class="upload-post-img__caption">Upload</span>
+                  </label>
+                  <input type="file" name="card_image" accept="image/*" class="hidden" id="upload-card-img__file-field" />
+                </div>
+                <div class="forms__uploaded-img-buttons hidden">
+                  <label for="upload-card-img__file-field" class="uploaded-img-buttons__upload-new">
+                    <img src="../static/img/camera.png" class="upload-new__img" />
+                    <span class="upload-new__caption">Upload New</span>
+                  </label>
+                  <div class="uploaded-img-buttons__remove">
+                    <img src="../static/img/trash.png" class="remove__img" />
+                    <span class="remove__caption">Remove</span>
+                  </div>
+                </div>
+                <span class="forms__subtitle" id="forms__card-caption">Size up to 10mb. Format: png, jpeg, gif.</span>
+              </div>
+            </div>
+            <div class="working-field__preview">
+              <div class="working-field__preview">
+                <span class="preview__title">Article preview</span>
+                <div class="preview__page">
+                  <div class="preview__page-area">
+                    <div class="page-area__top-block">
+                      <div class="page-area-top-block__menu-circle"></div>
+                      <div class="page-area-top-block__menu-circle"></div>
+                      <div class="page-area-top-block__menu-circle"></div>
+                    </div>
+                    <span class="page-area__title">New Post</span>
+                    <span class="page-area__subtitle">Please, enter any description</span>
+                    <div class="page-area__img"></div>
+                  </div>
+                  <div class="preview__horizontal-gradient"></div>
+                  <div class="preview__vertical-gradient"></div>
+                </div>
+              </div>
+              <div class="working-field__preview">
+                <span class="preview__title">Post card preview</span>
+                <div class="preview__card">
+                  <div class="preview__card-area">
+                    <div class="card-area__img"></div>
+                    <span class="card-area__title">New Post</span>
+                    <span class="card-area__subtitle">Please, enter any description</span>    
+                    <div class="card-area__info">
+                      <div class="card-area__user-image"></div>
+                      <span class="card-area__user-name">Enter author name</span>
+                      <span class="card-area__publish-date">4/19/2023</span>
+                    </div>
+                  </div>
+                  <div class="preview__horizontal-gradient"></div>
+                  <div class="preview__vertical-gradient"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="Content">
+        <h3 class="Content__title">Content</h3>
+        <h4 class="Content__subtitle">Post content (plain text)</h4>
+        <textarea type="text" placeholder="Type anything you want ..." class="Content__text-area"></textarea>
+    </div>  
+</body>
+</html>

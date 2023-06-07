@@ -1,0 +1,478 @@
+body
+{
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    background-color: #2E2E2E;
+    
+}
+
+.header-logo
+{
+    display: flex;
+    align-items: baseline;
+    color: #FFFFFF;
+    padding-left: 250px;
+    width: 150px;
+    font-weight: 400;
+}
+
+.header-logo__name
+{
+    font-family: 'Lora';
+    font-size: 24px;
+    margin: 0;
+    width: 90px;
+}
+
+.header-logo__extra-name
+{
+    font-family: 'Oxygen';
+    font-size: 13px;
+    margin: 0;
+    width: 40px; 
+}
+
+.header-menu
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-right: 250px;
+    height: auto;
+    width: auto;
+}
+
+.create-new-post
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.create-new-post-header__title
+{
+    font-family: 'Lora';
+    font-size: 34px;
+    margin: 0;
+}
+
+.create-new-post-header__subtitle
+{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    color: #7A7A7A;
+    margin: 0;
+}
+
+.create-new-post__publish
+{
+    display: flex;
+    cursor: pointer;
+    font-family: 'Oxygen';
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD783F;
+    border-radius: 3px;
+    border: none;
+    width: 100px;
+    height: 50px;
+}
+
+.working-field__forms
+{
+    width: 560px;
+}
+.main-info
+{
+    background-color: #FFFFFF;
+    margin: 32px 250px 0px 250px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+}
+
+.main-info__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    margin: 0;
+    font-size: 27px;
+    padding-top: 40px;
+}
+
+
+
+.main-info__whole-field {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    gap: 100px;
+
+}
+
+.working-field__add-post-form {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.forms__form-element {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.forms__title {
+    font-family:  "Oxygen";
+    font-size: 12px;
+    color: #7A7A7A;
+    padding-top: 40px;
+}
+
+.forms__subtitle
+{
+    font-family:  "Oxygen";
+    font-size: 12px;
+    color: #7A7A7A;
+}
+
+.forms__text {
+    padding: 8px 0 8px 4px;
+    width: 560px;
+    font-family: "Oxygen";
+    font-size:16px;
+    color: #2E2E2E;
+    background: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.forms__text_filled {
+    background: #F7F7F7;
+    border: none;
+    border-bottom: 1px solid #2E2E2E;
+    border-radius: 5px 5px 0 0;
+}
+
+.forms__text-input:focus {
+    outline: none;
+    background: #FFFFFF;
+    border-bottom: 2px solid #2E2E2E;
+}
+
+.forms__upload-user-image {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 5px 0 0;
+}
+
+.upload-user-image__user-image {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F7;
+    background-size: cover;
+    border: 1px dashed #D3D3D3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.upload-user-image__caption {
+    font: 400 16px/1.5 "Oxygen", sans-serif;
+    color: #2E2E2E;
+    cursor: pointer;
+}
+
+.forms__upload-post-image {
+    display: flex;
+}
+
+.upload-post-img__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 560px;
+    height: 160px;
+    background: #F7F7F7;
+    background-size: cover;
+    border: 1px dashed #D3D3D3;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.upload-post-img__button_card {
+    width: 296px;
+}
+
+.upload-post-img__caption {
+    font: 400 16px/1.5 "Oxygen", sans-serif;
+    color: #2E2E2E;
+}
+
+.working-field__preview {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.forms__uploaded-img-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.uploaded-img-buttons__upload-new {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.upload-new__img {
+    width: 24px;
+    height: 24px;
+}
+
+.upload-new__caption {
+    font: 400 16px/1.5 "Oxygen", sans-serif;
+    color: #2E2E2E;
+}
+
+.uploaded-img-buttons__remove {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remove__img {
+    width: 24px;
+    height: 24px;
+}
+
+.remove__caption {
+    font: 400 16px/1.5 "Oxygen", sans-serif;
+    color: #E86961;
+}
+
+.working-field__preview {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    gap: 16px;
+}
+
+.preview__title {
+    font: 400 14px/1.43 "Oxygen", sans-serif;
+    color: #7A7A7A;
+}
+
+.preview__page {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 440px;
+    min-height: 385px;
+    padding: 32px 16px 0;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 30px 30px 0 0;
+}
+
+.preview__horizontal-gradient {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.preview__vertical-gradient {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 119px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 84.72%);
+}
+
+.preview__page-area {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: #FFFFFF;
+    width:100%;
+    height: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+}
+
+.page-area__top-block {
+    display: flex;
+    gap: 3px;
+    box-sizing: border-box;
+    padding: 10px 0 0 9px;
+    height: 23px;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.page-area-top-block__menu-circle {
+    width: 4px;
+    height: 4px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+.page-area__title {
+    margin: 36px 71.5px 4px;
+    font: 400 20.4px/1.18 "Lora", serif;
+    color: #2E2E2E;
+    text-align: center;
+}
+
+.page-area__subtitle {
+    margin: 0 52.8px 36px;
+    font: 400 10.2px/1.18 "Oxygen", sans-serif;
+    color: rgba(46, 46, 46, 0.63);
+    text-align: center;
+}
+
+.page-area__img {
+    width: 100%;
+    height: 160px;
+    background: #F7F7F7;
+    background-size: cover;
+}
+
+.preview__card {
+    display: flex;
+    flex-flow: column;
+    padding: 32px 16px 40px;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px 0 0;
+}
+
+.preview__card-area {
+    display: flex;
+    flex-flow: column;
+    width: 296px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+}
+
+.card-area__img {
+    width: 100%;
+    height: 150px;
+    background: #F7F7F7;
+    background-size: cover;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.card-area__title {
+    margin: 14px 13px 7px 13px;
+    font: 400 16px/1.31 "Lora", serif;
+    color: #101315;
+}
+
+.card-area__subtitle {
+    margin: 0 13px 31px 13px;
+    font: 400 13px/1.46 "Oxygen", sans-serif;
+    color: #7A7A7A;
+}
+
+.card-area__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 13px 6px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #FCFCFC;
+    border-top: 1px solid #EFEFEF;
+}
+
+.card-area__user-image {
+    width: 26px;
+    height: 26px;
+    background: #F7F7F7;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.card-area__user-name {
+    flex: 1 0 auto;
+    font: 400 12px/2.92 "Oxygen", sans-serif;
+    color: #999999;
+}
+
+.card-area__publish-date {
+    font: 400 12px/2.92 "Oxygen", sans-serif;
+    color: #999999;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+.Content 
+{
+    background-color: #FFFFFF;
+    margin: 15px 250px 0px 250px; 
+}
+
+.Content__title
+{
+    font-family: "Lora";
+    font-size: 27px;
+    margin: 0;
+    padding-left: 40px;
+    padding: 40px 0px 40px 40px;   
+}
+
+.Content__subtitle
+{
+    font-family: "Oxygen";
+    margin:0 0 10px 0;
+    font-size: 12px;
+    color: #7A7A7A;
+    padding: 0 0 5px 40px;
+}
+
+.Content__text-area
+{
+    margin-left: 40px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    border-width: 1px;
+    width: 940px;
+    height: 160px;  
+    border-radius: 5px;
+}
