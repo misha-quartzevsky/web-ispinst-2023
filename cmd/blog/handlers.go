@@ -18,17 +18,17 @@ type indexPage struct {
 type postsData struct {
 	Title       string `db:"title"`
 	Subtitle    string `db:"subtitle"`
-	ImgModifier string `db:"imgmodifier"`
+	ImgModifier string `db:"image_url"`
+	AuthorImg   string `db:"author_url"`
 	Author      string `db:"author"`
-	AuthorImg   string `db:"authorimg"`
-	PublishDate string `db:"publishdate"`
+	PublishDate string `db:"publish_date"`
 	Featured    int    `db:"featured"`
 }
 
 type postContentData struct {
 	Title    string `db:"title"`
 	Subtitle string `db:"subtitle"`
-	Image    string `db:"image"`
+	Image    string `db:"image_url"`
 	Text     string `db:"content"`
 }
 
@@ -138,21 +138,23 @@ func posts(db *sqlx.DB) ([]postsData, error) {
 			post_id,
 			title,
 			subtitle,
-			imgmodifier,
+			author_url,
 			author,
-			authorimg,
-			publishdate,
+			publish_date,
+			image_url,
+			content,
 			featured
 		FROM
 			post
 	` // Составляем SQL-запрос для получения записей для секций featured-posts и recent-posts с вариативностью 0/1 у featured через БД
-
+	log.Println("111111")
 	var posts []postsData // Заранее объявляем массив с результирующей информацией
-
+	log.Println("2222222")
 	err := db.Select(&posts, query) // Делаем запрос в базу данных
 	if err != nil {                 // Проверяем, что запрос в базу данных не завершился с ошибкой
 		return nil, err
 	}
+	log.Println("3333333")
 
 	return posts, nil
 }
