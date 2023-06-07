@@ -45,39 +45,41 @@
             <section class="featured-posts">
                 
                 <h2 class="name-of-section">Featured Posts</h2>
-                {{ range .FeaturedPosts}}
-                <div class="posts {{.ImgModifier}}">
-                   
-                    <article class="featured">                     
-                        <h3 class="featured__header">{{ .Title }}</h3>
-                        <p class="featured__substring">{{ .Subtitle }}</p>
-                        <div class="featured__extra-info">
-                            <img class="featured__img-author" src="{{ .AuthorImg }}" alt="Mat Vogels">
-                            <span class="featured__author">{{ .Author }}</span>
-                            <span class="featured__date">{{ .PublishDate }}</span>
-                        </div>                      
-                    </article>
-               
-                </div>
-                {{ end }}
+                {{range .Posts}}
+                    {{if .Featured}}
+                        <a class="posts {{.ImgModifier}}" href="/post/{{ .PostID }}">
+                            <article class="featured">                     
+                                <h3 class="featured__header">{{ .Title }}</h3>
+                                <p class="featured__substring">{{ .Subtitle }}</p>
+                                <div class="featured__extra-info">
+                                    <img class="featured__img-author" src="{{ .AuthorImg }}" alt="Mat Vogels">
+                                    <span class="featured__author">{{ .Author }}</span>
+                                    <span class="featured__date">{{ .PublishDate }}</span>
+                                </div>                      
+                            </article>
+                        </a>
+                    {{ end }}
+                 {{ end }}   
             </section>
             <section class="most-recent">
                 <h2 class="name-of-section">Most Recent</h2>
                 <div class="recents">
-                    {{ range .MostRecentPosts}}                  
-                    <div class="recent">
-                        <img src="{{ .Image }}" alt="Still Standing Tall">
-                        <div class="recent__caption"> 
-                            <h3 class="recent__header">{{ .Title }}</h3>
-                            <p class="recent__substring">{{ .Subtitle }}</p>
-                        </div>
-                        
-                        <div class="recent__underground">
-                            <img class="recent__img-author" src="{{ .AuthorImg }}" alt="William Wong">
-                            <span class="recent__author">{{ .Author }}</span>
-                            <span class="recent__date">{{ .PublishDate }}</span>
-                        </div>
-                    </div>
+                    {{range .Posts}}
+                        {{if not .Featured}}                  
+                            <a class="recent" href="/post/{{ .PostID }}">
+                                <img src="{{ .Image }}" alt="Still Standing Tall">
+                                <div class="recent__caption"> 
+                                    <h3 class="recent__header">{{ .Title }}</h3>
+                                    <p class="recent__substring">{{ .Subtitle }}</p>
+                                </div>
+                                
+                                <div class="recent__underground">
+                                    <img class="recent__img-author" src="{{ .AuthorImg }}" alt="William Wong">
+                                    <span class="recent__author">{{ .Author }}</span>
+                                    <span class="recent__date">{{ .PublishDate }}</span>
+                                </div>
+                            </a>
+                        {{ end }}  
                     {{ end }}                   
                 </div>
             </section>

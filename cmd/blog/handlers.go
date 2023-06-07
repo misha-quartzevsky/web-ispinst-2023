@@ -119,7 +119,7 @@ func mostRecentPosts() []mostRecentPostData {
 			Subtitle:    "We travel not to escape life, but for life not to escape us.",
 			Image:       "/static/img/img3.png",
 			Author:      "Mat Vogels",
-			AuthorImg:   "/static//static/img/mat-vogels.png",
+			AuthorImg:   "/static/img/mat-vogels.png",
 			PublishDate: "9/25/2015",
 		},
 		{
